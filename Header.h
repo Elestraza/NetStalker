@@ -1,0 +1,12 @@
+#pragma once
+#include <winsock2.h>
+#include <ws2tcpip.h>
+#include <iostream>
+#include <thread>
+#include <vector>
+#include <chrono>
+#include <sstream>
+#include <iphlpapi.h>
+#include <fstream>
+#include <filesystem>
+#include <stdexcept>
