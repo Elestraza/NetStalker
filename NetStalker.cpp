@@ -25,9 +25,9 @@ std::string readJournalFile(const fs::path& filePath) {
 // Функция для поиска всех профилей пользователей
 std::vector<std::string> getUserProfiles(const std::string& ip) {
     std::vector<std::string> userProfiles;
-
+    // %UserName%
     try {
-        fs::path userProfilesPath = fs::path("\\\\") / ip / "C$" / "Users";
+        fs::path userProfilesPath = fs::path("\\\\") / ip / "%SystemDrive%" / "Users" / "%UserName%";
 
         if (fs::exists(userProfilesPath) && fs::is_directory(userProfilesPath)) {
             for (const auto& entry : fs::directory_iterator(userProfilesPath)) {
