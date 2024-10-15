@@ -10,3 +10,5 @@
 #include <fstream>
 #include <filesystem>
 #include <stdexcept>
+#include <cstdlib>
+#include <windows.h>
